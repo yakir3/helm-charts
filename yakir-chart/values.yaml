@@ -1,6 +1,9 @@
-# Default values for alpine.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+service:
+  app_name: public-rex-gateway-v4
+
+favorite:
+  drink: coffee
+  food: pizza
 
 replicaCount: 1
 

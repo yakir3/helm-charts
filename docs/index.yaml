@@ -1,14 +1,25 @@
 apiVersion: v1
 entries:
-  alpine:
+  yakir-chart:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-08-29T23:50:32.509081+08:00"
-    description: A Helm chart for Kubernetes
-    digest: e24f5e174baaf65288f4413075b190b648c7d507be0b1c98fad67cb292416c89
-    name: alpine
-    type: application
+    created: "2023-08-30T08:25:47.76594+08:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: A Helm chart for Kubernetes Template
+    digest: 58b0380e9bd40dcd6edf1467c5de4c7dabad7a2573f6216387432a7361f34cde
+    home: https://github.com/yakir3
+    icon: https://github.com/yakir3
+    keywords:
+    - template
+    maintainers:
+    - name: Yakir
+      url: https://github.com/yakir3
+    name: yakir-chart
     urls:
-    - https://359sun.top/helm-charts/alpine-0.1.0.tgz
+    - https://359sun.top/helm-charts/yakir-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-29T23:50:32.507458+08:00"
+generated: "2023-08-30T08:25:47.764899+08:00"
