@@ -1,0 +1,18 @@
+apiVersion: v2
+appVersion: 0.1.1
+dependencies:
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  tags:
+  - bitnami-common
+  version: 2.x.x
+description: A Helm chart for Kubernetes Template
+home: https://github.com/yakir3/helm-charts/charts/yakir-chart
+icon: https://yakir.com/img/x.png
+keywords:
+  - template
+maintainers:
+- name: Yakir
+  url: https://github.com/yakir3/helm-charts
+name: yakir-chart
+version: 0.1.1
