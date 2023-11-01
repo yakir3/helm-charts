@@ -20,6 +20,10 @@ To uninstall the chart:
     helm delete my-app
 
 
+
 To index helm repo
 
+    # 1.generated helm index docs
     helm repo index docs --url https://359sun.top/helm-charts
+    # 2.push to repo
+    
