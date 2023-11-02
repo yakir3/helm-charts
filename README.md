@@ -23,7 +23,10 @@ To uninstall the chart:
 
 To index helm repo
 
-    # 1.generated helm index docs
-    helm repo index docs --url https://359sun.top/helm-charts
-    # 2.push to repo
+    # 1.package chart
+    cd docs
+    helm package ../charts/xxx-chart
+    # 2.generated helm index docs
+    helm repo index ../docs --url https://359sun.top/helm-charts
+    # 3.push to repo
     
