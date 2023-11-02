@@ -4,8 +4,8 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Revision }}-configmap
   labels:
-    {{- template "yakir-chart.labels" . }}
-{{ include "yakir-chart.app" . | indent 4 }}
+    {{- template "my-chart.labels" . }}
+{{ include "my-chart.app" . | indent 4 }}
 data:
   {{- if regexMatch "rex-gateway" $CHART_NAME }}
   xxx: "xxx"
@@ -20,4 +20,4 @@ data:
     {{- range .Values.pizzaToppings }}
     - {{ . | title | quote }}
     {{- end }}
-{{ include "yakir-chart.app" . | indent 2 }}
+{{ include "my-chart.app" . | indent 2 }}
