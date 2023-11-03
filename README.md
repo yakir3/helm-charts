@@ -25,8 +25,8 @@ To index helm repo
 
     # 1.package chart
     cd docs
-    helm package ../charts/xxx-chart
+    helm package ../charts/*
     # 2.generated helm index docs
     helm repo index ../docs --url https://359sun.top/helm-charts
     # 3.push to repo
-    
+    git push origin

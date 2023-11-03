@@ -1,13 +1,13 @@
-{{- $CHART_NAME := "public-rex-gateway-v4"}}
+{{- $CHART_NAME := "myapp"}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: {{ .Release.Revision }}-configmap
   labels:
-    {{- template "my-chart.labels" . }}
-{{ include "my-chart.app" . | indent 4 }}
+    {{- template "mychart.labels" . }}
+    {{- include "mychart.labels" . | indent 2 }}
 data:
-  {{- if regexMatch "rex-gateway" $CHART_NAME }}
+  {{- if regexMatch "myapp" $CHART_NAME }}
   xxx: "xxx"
   {{- end }}
   {{- with .Values.favorite }}
@@ -20,4 +20,4 @@ data:
     {{- range .Values.pizzaToppings }}
     - {{ . | title | quote }}
     {{- end }}
-{{ include "my-chart.app" . | indent 2 }}
+{{ include "mychart.app" . | indent 2 }}
