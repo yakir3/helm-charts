@@ -1,0 +1,23 @@
+{{- $CHART_NAME := "myapp"}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Revision }}-configmap
+  labels:
+    {{- template "mychart.labels" . }}
+    {{- include "mychart.labels" . | indent 2 }}
+data:
+  {{- if regexMatch "myapp" $CHART_NAME }}
+  xxx: "xxx"
+  {{- end }}
+  {{- with .Values.favorite }}
+  drink: {{ .drink | default "tea" | quote }}
+  food: {{ .food | upper | indent 4 }}
+  {{- end }}
+  release_name: {{ .Release.Name }}
+  release_revision: {{ .Release.Revision }}
+  toppings: |-
+    {{- range .Values.pizzaToppings }}
+    - {{ . | title | quote }}
+    {{- end }}
+{{ include "mychart.app" . | indent 2 }}
