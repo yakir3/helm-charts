@@ -1,26 +1,35 @@
 apiVersion: v1
 entries:
-  my-chart:
+  mychart:
   - apiVersion: v2
-    appVersion: "0.1"
-    created: "2023-11-02T16:21:39.575085+08:00"
+    appVersion: "20230101"
+    created: "2023-11-03T19:30:33.361449+08:00"
     dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 2.x.x
+    - name: mylibchart
+      repository: file://../mylibchart
+      version: 0.1.0
     description: A Helm chart for Kubernetes Template
-    digest: 3547bd3440b9fb0cd182873024f7192deba01415e08203ef78060c3193dd0741
-    home: https://github.com/yakir3/helm-charts/charts/my-chart
+    digest: bc1639b573a9d583c1aab50b01ac6a6c8b19d16e17d3f0e887247e06e1aa71b3
+    home: https://github.com/yakir3/helm-charts/charts/mychart
     icon: https://yakir.com/img/x.png
     keywords:
     - template
     maintainers:
     - name: Yakir
       url: https://github.com/yakir3/helm-charts
-    name: my-chart
+    name: mychart
     urls:
-    - https://359sun.top/helm-charts/my-chart-0.0.1.tgz
-    version: 0.0.1
-generated: "2023-11-02T16:21:39.574028+08:00"
+    - https://359sun.top/helm-charts/mychart-0.1.0.tgz
+    version: 0.1.0
+  mylibchart:
+  - apiVersion: v2
+    appVersion: "20230101"
+    created: "2023-11-03T19:30:33.361602+08:00"
+    description: A Helm chart for Kubernetes
+    digest: b0f0fd3b6fa2de90c730121b7f354a29dcd809cef7abff2533dde21b15a41f05
+    name: mylibchart
+    type: library
+    urls:
+    - https://359sun.top/helm-charts/mylibchart-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-11-03T19:30:33.360824+08:00"

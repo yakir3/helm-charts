@@ -1,24 +1,37 @@
-##### Basic
-Linux Command
+### Basic
+
+#### Linux
+##### introdution
+
+##### command
 ls
 cd
 mkdir
 ...
 
-HTTP
+#### Service 
+nginx
+redis
+cdn
+
+#### HTTP
 status code
 
+
+#### Daily
 ##### Backend
 CMDB
-
 AWS
-
 GCLOUD
 
-##### Service 
-nginx
+##### others
+chrome plugin
+editor
+
+how to upgrade?
+
+domain: record? buy? online?
 
 
-##### Others
-upgrade step
+
 
