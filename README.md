@@ -1,3 +1,5 @@
+![Static Badge](https://img.shields.io/badge/Artifact%20Hub-repo-blue?link=https%3A%2F%2Fartifacthub.io%2F)
+
 ## Usage
 
 [Helm](https://helm.sh) must be installed to use the charts.  Please refer to
