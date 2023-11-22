@@ -1,4 +1,4 @@
-![Static Badge](https://img.shields.io/badge/Artifact%20Hub-repo-blue?link=https%3A%2F%2Fartifacthub.io%2F)
+[![Static Badge](https://img.shields.io/badge/Artifact%20Hub-repo-blue)](https://artifacthub.io/)
 
 ## Usage
 
