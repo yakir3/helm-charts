@@ -24,12 +24,14 @@ Helm's [documentation](https://helm.sh/docs/) to get started.
 
 Index and publish helm package
 
-    helm repo index ../docs --url https://359sun.top/helm-charts
+    helm repo index ../docs --url https://yakir.top/helm-charts
     git push origin
 
 Once Helm has been set up correctly, add the repo as follows:
 
     helm repo add my-repo https://yakir3.github.io/helm-charts
+    # or
+    helm repo add my-repo https://yakir.top/helm-charts/
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  
@@ -41,7 +43,7 @@ Install the my-app chart:
 
 Uninstall the chart:
 
-    helm delete my-chart
+    helm uninstall my-chart
 
 ### GitLab package registry
 
@@ -56,6 +58,7 @@ Install helm cm-push plugin
 Authenticate to the Helm repository, get username and token from GitLab
 
 Index and publish helm package
+
     helm repo add --username <username> --password <access_token> my-repo https://gitlab.example.com/api/v4/projects/<project_id>/packages/helm/stable
     helm cm-push mychart-0.1.0.tgz my-repo
 
@@ -65,5 +68,5 @@ Install the my-app chart:
 
 Uninstall the chart:
 
-    helm delete my-chart
+    helm uninstall my-chart
 
