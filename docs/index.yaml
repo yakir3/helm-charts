@@ -3,7 +3,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: "20230101"
-    created: "2023-11-03T19:30:33.361449+08:00"
+    created: "2024-08-29T20:13:28.113956+08:00"
     dependencies:
     - name: mylibchart
       repository: file://../mylibchart
@@ -19,17 +19,17 @@ entries:
       url: https://github.com/yakir3/helm-charts
     name: mychart
     urls:
-    - https://359sun.top/helm-charts/mychart-0.1.0.tgz
+    - https://yakir.top/helm-charts/mychart-0.1.0.tgz
     version: 0.1.0
   mylibchart:
   - apiVersion: v2
     appVersion: "20230101"
-    created: "2023-11-03T19:30:33.361602+08:00"
+    created: "2024-08-29T20:13:28.114215+08:00"
     description: A Helm chart for Kubernetes
     digest: b0f0fd3b6fa2de90c730121b7f354a29dcd809cef7abff2533dde21b15a41f05
     name: mylibchart
     type: library
     urls:
-    - https://359sun.top/helm-charts/mylibchart-0.1.0.tgz
+    - https://yakir.top/helm-charts/mylibchart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-03T19:30:33.360824+08:00"
+generated: "2024-08-29T20:13:28.113115+08:00"

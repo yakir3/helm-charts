@@ -25,6 +25,8 @@ Helm's [documentation](https://helm.sh/docs/) to get started.
 Index and publish helm package
 
     helm repo index ../docs --url https://yakir.top/helm-charts
+    git add -A 
+    git commit -m 'Update helm-charts index.yaml'
     git push origin
 
 Once Helm has been set up correctly, add the repo as follows:
@@ -45,7 +47,7 @@ Uninstall the chart:
 
     helm uninstall my-chart
 
-### GitLab package registry
+### GitLab Package registry
 
 [GitLab](https://gitlab.com/) must be installed to use. Please refer to
 GitLab's [documentation](https://docs.gitlab.com/ee/user/packages/helm_repository/) to get started.
