@@ -1,4 +1,4 @@
-[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/yakir3/helm-charts/release.yml?label=GitHub%20Actions&logo=github&logoColor=white)](https://github.com/yakir3/gitbook/actions/workflows/release.yml)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/yakir3/helm-charts/release.yml?label=GitHub%20Actions&logo=github&logoColor=white)](https://github.com/yakir3/helm-charts/actions/workflows/release.yml)
 
 [![Static Badge](https://img.shields.io/badge/Artifact%20Hub-repo-blue)](https://artifacthub.io/)
 
